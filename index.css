@@ -308,3 +308,57 @@ h2 {
     display: flex;
     transition: transform 0.5s ease;
 }
+
+.report-card {
+    min-width: 100%;
+    background-color: #c3a793;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    position: relative;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.views {
+    color: white;
+    font-weight: bold;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.status-indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.critical {
+    background-color: #ff5252;
+}
+
+.construction {
+    background-color: #ffb300;
+}
+
+.completed {
+    background-color: #4caf50;
+}
+
+.status-text {
+    font-size: 14px;
+    font-weight: 600;
+}
