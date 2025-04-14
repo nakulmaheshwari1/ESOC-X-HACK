@@ -126,3 +126,20 @@ body {
     margin-bottom: 10px;
 }
 
+
+/* Footer Button */
+.footer-button {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.footer-button button {
+    background-color: #b89072;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
