@@ -65,3 +65,64 @@ body {
     cursor: pointer;
 }
 
+.report-btn {
+    background-color: #4a4a4a;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 15px;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.flame-count {
+    font-size: 1.1rem;
+}
+
+/* Circle + Vertical Text */
+.profile-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #b89072;
+    border-radius: 50%;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+/* Map Section */
+.map-section {
+    flex-grow: 1;
+    background: linear-gradient(to bottom, #e8e5e2, #e1d4c8);
+    border-radius: 25px;
+    margin: 0 20px;
+    padding: 40px;
+}
+
+#map {
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.map-info {
+    margin-top: 20px;
+}
+
+.map-info h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.map-info p {
+    font-size: 0.95rem;
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+
