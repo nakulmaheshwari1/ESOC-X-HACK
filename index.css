@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f2ef;
+    color: #333;
+    padding: 20px;
+    padding-bottom: 80px;
+    /* Add padding to bottom to ensure content isn't hidden by fixed button */
+}
