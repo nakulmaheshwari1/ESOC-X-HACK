@@ -677,3 +677,43 @@ textarea {
     font-size: 20px;
     text-decoration: none;
 }
+
+/* Hide scrollbar */
+.community-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.community-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Fixed Plus Button Styles */
+.floating-plus-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #ff5252;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 32px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 1000;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.floating-plus-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.floating-plus-button:active {
+    transform: scale(0.95);
+}
