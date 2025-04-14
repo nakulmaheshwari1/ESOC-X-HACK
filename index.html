@@ -504,3 +504,78 @@
 
     <!-- Fixed Plus Button -->
     <a href="tryrepost.html" class="floating-plus-button">+</a>
+
+
+    <!-- js code -->
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Heatmap Plugin -->
+    <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+
+    <script>
+        const map = L.map('map').setView([28.6139, 77.2090], 13); // New Delhi
+
+        // OpenStreetMap Tile Layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        let marker;
+
+        // Click to add/move marker
+        map.on('click', function (e) {
+            if (marker) {
+                marker.setLatLng(e.latlng);
+            } else {
+                marker = L.marker(e.latlng, { draggable: true }).addTo(map);
+            }
+        });
+
+        // Heatmap sample data (lat, lng, intensity)
+        const heatData = [
+            [28.6139, 77.2090, 0.7],
+            [28.6200, 77.2100, 0.9],
+            [28.6170, 77.2200, 0.8],
+            [28.6120, 77.2000, 0.6],
+        ];
+
+        const heat = L.heatLayer(heatData, {
+            radius: 25,
+            blur: 15,
+            gradient: {
+                0.4: 'blue',
+                0.6: 'lime',
+                0.8: 'orange',
+                1.0: 'red',
+            },
+        }).addTo(map);
+
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.report-card');
+        const totalSlides = slides.length;
+        const carousel = document.querySelector('.carousel');
+
+        function moveSlide(direction) {
+            currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+            updateCarousel();
+        }
+
+        function updateCarousel() {
+            carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+
+        // Clone community cards for continuous scroll
+        const communityScroll = document.getElementById('communityScroll');
+        const cards = document.querySelectorAll('.community-card');
+        cards.forEach(card => {
+            const clone = card.cloneNode(true);
+            communityScroll.appendChild(clone);
+        });
+
+
+    </script>
+</body>
+
+</html>
