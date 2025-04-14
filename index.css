@@ -143,3 +143,143 @@ body {
     cursor: pointer;
     transition: background 0.3s ease;
 }
+
+.reports-container {
+    background: #ffffff;
+    width: 100%;
+}
+
+.reports-header {
+    padding: 1.5rem 1rem;
+    width: 100%;
+}
+
+.reports-header span {
+    font-size: 1.4rem;
+}
+
+.reports-wrapper {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.reports-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.reports {
+    margin: 0 10px;
+    width: 90vw;
+    min-width: 200px;
+    max-width: 500px;
+    height: fit-content;
+    background: #B19079;
+    color: #ffffff;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.reports-section-1 {
+    padding: 15px 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px 30px 0 0;
+}
+
+.reports-section-1 .reports-address {
+    display: flex;
+    flex-direction: column;
+}
+
+.reports-section-2 {
+    margin: 0 25px;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 30px;
+    position: relative;
+}
+
+.reports-section-2 .reports-section-2-header {
+    padding: 5px 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    border-radius: 30px 30px 0 0;
+    background: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.05));
+    display: flex;
+    justify-content: space-between;
+}
+
+.reports-section-2 .reports-section-2-header .reports-eshb {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.reports-section-2 .reports-section-2-header .reports-eshb .reports-profile-photo {
+    height: 100%;
+    max-height: 35px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    background: red;
+}
+
+.reports-section-2 .reports-section-2-header .reports-eshb .reports-profile-photo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.reports-section-2 .reports-section-2-header .reports-eshb .reports-caefd {
+    display: flex;
+    flex-direction: column;
+}
+
+.reports-section-2 .reports-section-2-header .reports-share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reports-section-2 .reports-section-2-content {
+    width: 100%;
+    height: 250px;
+    border-radius: 30px;
+}
+
+.reports-section-2 .reports-section-2-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 30px;
+}
+
+.reports-section-2 .reports-section-2-content .img-2 {
+    display: none;
+}
+
+.reports-section-3 {
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reports:hover .img-1 {
+    display: none;
+}
+
+.reports:hover .img-2 {
+    display: block;
+}
+
