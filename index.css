@@ -283,3 +283,28 @@ body {
     display: block;
 }
 
+.footer-button button:hover {
+    background-color: #a67759;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.trending-section {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
