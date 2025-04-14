@@ -553,3 +553,127 @@ h2 {
     }
 }
 
+.community-card {
+    flex: 0 0 280px;
+    background-color: #f0e5dd;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.community-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.community-stats {
+    margin-left: auto;
+    font-size: 12px;
+    color: #777;
+}
+
+.community-content {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.community-footer {
+    text-align: right;
+}
+
+.react-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #555;
+    font-size: 18px;
+}
+
+.shortcuts {
+    margin-bottom: 30px;
+}
+
+.shortcut-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 8px 15px;
+    margin-right: 10px;
+    font-size: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section {
+    background-color: #6d635b;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.contact-section h3 {
+    margin-bottom: 15px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.submit-btn {
+    background-color: #ff5252;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.links-section {
+    background-color: #6d635b;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.links-section h3 {
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6d635b;
+    font-size: 20px;
+    text-decoration: none;
+}
