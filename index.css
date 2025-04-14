@@ -35,3 +35,33 @@ body {
     font-size: 1.2rem;
     color: #4a4a4a;
 }
+
+.search-report {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #f5f0f0;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 5px;
+}
+
+.search-btn,
+.menu-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
